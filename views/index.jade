@@ -1,0 +1,17 @@
+doctype html
+fieldset
+    form(method="POST", action='/new_user')
+        legend Personal information:
+        |     User Name:
+        br
+        input(type='text', name='username', required='')
+        br
+        |     Password:
+        br
+        input(type='password', name='password', required='')
+        br
+        br
+        input(type='submit', value='Submit')
+        br
+    form(method="GET", action='/sign_up')
+        input(type='submit', value='Sign Up')

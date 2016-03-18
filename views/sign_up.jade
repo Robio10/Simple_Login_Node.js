@@ -1,0 +1,18 @@
+doctype html
+html
+  body
+    form(method='POST', action='/register')
+      fieldset
+        | User Name:
+        br
+        input(type='text', name='username', required='')
+        br
+        |     Type Password:
+        br
+        input(type='password', name='password', required='')
+        br
+        |     Retype Password:
+        br
+        input(type='password', name='password_1', required='')
+        br
+        input(type='submit', value='Sign Up')
